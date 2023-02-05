@@ -34,9 +34,7 @@ public class ProductController {
 
     @PostMapping(value = "/produit")
         Product newProduct(@RequestBody Product newProduct) {
-
-
-
-
+        productDao.save(newProduct);
+        return newProduct;
     }
 }

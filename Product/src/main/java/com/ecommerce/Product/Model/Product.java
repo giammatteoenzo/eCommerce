@@ -16,8 +16,6 @@ public class Product {
 
     private String description;
 
-    private String image;
-
     private Double prix;
 
 
@@ -28,7 +26,6 @@ public class Product {
         this.id = id;
         this.titre = titre;
         this.description = description;
-        this.image = image;
         this.prix = prix;
     }
 
@@ -56,14 +53,6 @@ public class Product {
         this.description = description;
     }
 
-    public String getImage() {
-        return image;
-    }
-
-    public void setImage(String image) {
-        this.image = image;
-    }
-
     public Double getPrix() {
         return prix;
     }
@@ -77,8 +66,6 @@ public class Product {
         return "Product{" +
                 "id=" + id +
                 ", titre='" + titre + '\'' +
-                ", description='" + description + '\'' +
-                ", image='" + image + '\'' +
                 ", prix=" + prix +
                 '}';
     }
